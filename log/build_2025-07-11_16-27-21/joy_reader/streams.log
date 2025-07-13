@@ -1,0 +1,21 @@
+[0.686s] Invoking command in '/home/steam/steamdeck_rover_ws/src/joy_reader': PYTHONPATH=/home/steam/steamdeck_rover_ws/build/joy_reader/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/steam/steamdeck_rover_ws/install/joy_reader/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/joy_reader build --build-base /home/steam/steamdeck_rover_ws/build/joy_reader/build install --record /home/steam/steamdeck_rover_ws/build/joy_reader/install.log --single-version-externally-managed install_data
+[0.920s] running egg_info
+[0.920s] writing ../../build/joy_reader/joy_reader.egg-info/PKG-INFO
+[0.921s] writing dependency_links to ../../build/joy_reader/joy_reader.egg-info/dependency_links.txt
+[0.921s] writing entry points to ../../build/joy_reader/joy_reader.egg-info/entry_points.txt
+[0.921s] writing requirements to ../../build/joy_reader/joy_reader.egg-info/requires.txt
+[0.921s] writing top-level names to ../../build/joy_reader/joy_reader.egg-info/top_level.txt
+[0.923s] reading manifest file '../../build/joy_reader/joy_reader.egg-info/SOURCES.txt'
+[0.925s] writing manifest file '../../build/joy_reader/joy_reader.egg-info/SOURCES.txt'
+[0.925s] running build
+[0.925s] running build_py
+[0.925s] running install
+[0.926s] running install_lib
+[0.928s] running install_data
+[0.928s] running install_egg_info
+[0.930s] removing '/home/steam/steamdeck_rover_ws/install/joy_reader/lib/python3.10/site-packages/joy_reader-0.0.0-py3.10.egg-info' (and everything under it)
+[0.930s] Copying ../../build/joy_reader/joy_reader.egg-info to /home/steam/steamdeck_rover_ws/install/joy_reader/lib/python3.10/site-packages/joy_reader-0.0.0-py3.10.egg-info
+[0.931s] running install_scripts
+[0.955s] Installing joy_reader_node script to /home/steam/steamdeck_rover_ws/install/joy_reader/lib/joy_reader
+[0.956s] writing list of installed files to '/home/steam/steamdeck_rover_ws/build/joy_reader/install.log'
+[0.999s] Invoked command in '/home/steam/steamdeck_rover_ws/src/joy_reader' returned '0': PYTHONPATH=/home/steam/steamdeck_rover_ws/build/joy_reader/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/steam/steamdeck_rover_ws/install/joy_reader/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/joy_reader build --build-base /home/steam/steamdeck_rover_ws/build/joy_reader/build install --record /home/steam/steamdeck_rover_ws/build/joy_reader/install.log --single-version-externally-managed install_data

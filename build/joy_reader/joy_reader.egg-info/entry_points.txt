@@ -1,0 +1,3 @@
+[console_scripts]
+joy_reader_node = joy_reader.joy_reader_node:main
+

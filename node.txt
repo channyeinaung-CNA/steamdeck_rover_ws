@@ -1,0 +1,110 @@
+cd ~/steamdeck_rover_ws
+colcon build --packages-select joy_reader
+source install/setup.bash
+
+
+ros2 run joy joy_node
+
+ros2 run joy_reader joy_reader_node
+
+ros2 topic echo /cmd_vel
+
+
+
+export ROS_DOMAIN_ID=42
+source /opt/ros/humble/setup.bash
+ros2 run joy joy_node
+# In another terminal:
+ros2 run joy_reader joy_reader_node
+
+
+ros2 topic list
+ros2 topic echo /scan
+
+
+nano ~/start_joystick.sh
+
+#!/bin/bash
+
+# Set up ROS environment
+source /opt/ros/humble/setup.bash
+source ~/steamdeck_rover_ws/install/setup.bash
+export DISPLAY=:0
+
+# Start joy_node
+tmux has-session -t joy 2>/dev/null || \
+tmux new-session -d -s joy "ros2 run joy joy_node"
+
+# Start joy_reader_node
+tmux has-session -t joy_reader 2>/dev/null || \
+tmux new-session -d -s joy_reader "ros2 run joy_reader joy_reader_node"
+
+# Start RViz2
+tmux has-session -t rviz 2>/dev/null || \
+tmux new-session -d -s rviz "rviz2"
+
+# Attach to RViz (or joy_reader if you prefer)
+tmux attach-session -t rviz
+
+chmod +x ~/start_joystick.sh
+
+./start_joystick.sh
+
+
+nano ~/.local/share/applications/StartJoystick.desktop
+[Desktop Entry]
+Type=Application
+Name=Start Joystick
+Exec=sh -c "nohup /home/steam/start_joystick.sh >/dev/null 2>&1 &"
+Icon=input-gaming
+Terminal=false
+Categories=Utility;
+chmod +x ~/.local/share/applications/StartJoystick.desktop
+
+[Desktop Entry]
+Type=Application
+Name=Start Joystick
+Exec=gnome-terminal -- bash -c "~/start_joystick.sh; exec bash"
+Icon=input-gaming
+Terminal=true
+Categories=Utility;
+
+nano ~/.local/share/applications/StopJoystick.desktop
+[Desktop Entry]
+Type=Application
+Name=Stop Joystick
+Exec=sh -c "nohup /home/steam/stop_joystick.sh >/dev/null 2>&1 &"
+Icon=application-exit
+Terminal=false
+Categories=Utility;
+chmod +x ~/.local/share/applications/StopJoystick.desktop
+
+[Desktop Entry]
+Type=Application
+Name=Stop Joystick
+Exec=gnome-terminal -- bash -c "/home/steam/stop_joystick.sh; exec bash"
+Icon=application-exit
+Terminal=true
+Categories=Utility;
+
+chmod +x ~/start_joystick.sh
+chmod +x ~/stop_joystick.sh
+chmod +x ~/.local/share/applications/StartJoystick.desktop
+chmod +x ~/.local/share/applications/StopJoystick.desktop
+
+rm ~/.local/share/applications/StartJoystick.desktop
+rm ~/.local/share/applications/StopJoystick.desktop
+
+
+
+ros2 run tf2_ros static_transform_publisher \
+  --x 0.0 --y 0.0 --z 0.0 \
+  --roll 0.0 --pitch 0.0 --yaw 0.0 \
+  --frame-id map \
+  --child-frame-id base_link
+
+ros2 run tf2_ros tf2_echo map base_link
+
+
+ros2 launch -- ./scripts/slam_with_delay.launch.py
+

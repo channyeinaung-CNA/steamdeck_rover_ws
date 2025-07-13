@@ -1,0 +1,17 @@
+running develop
+running egg_info
+writing joy_reader.egg-info/PKG-INFO
+writing dependency_links to joy_reader.egg-info/dependency_links.txt
+writing entry points to joy_reader.egg-info/entry_points.txt
+writing requirements to joy_reader.egg-info/requires.txt
+writing top-level names to joy_reader.egg-info/top_level.txt
+reading manifest file 'joy_reader.egg-info/SOURCES.txt'
+writing manifest file 'joy_reader.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/steam/steamdeck_rover_ws/install/joy_reader/lib/python3.10/site-packages/joy-reader.egg-link (link to .)
+Installing joy_reader_node script to /home/steam/steamdeck_rover_ws/install/joy_reader/lib/joy_reader
+
+Installed /home/steam/steamdeck_rover_ws/build/joy_reader
+running symlink_data
+symbolically linking /home/steam/steamdeck_rover_ws/build/joy_reader/resource/joy_reader -> /home/steam/steamdeck_rover_ws/install/joy_reader/share/ament_index/resource_index/packages
+symbolically linking /home/steam/steamdeck_rover_ws/build/joy_reader/package.xml -> /home/steam/steamdeck_rover_ws/install/joy_reader/share/joy_reader

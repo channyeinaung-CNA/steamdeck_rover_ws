@@ -1,0 +1,116 @@
+[0.274s] Invoking command in '/home/steam/steamdeck_rover_ws/build/teleop_twist_joy': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/steam/steamdeck_rover_ws/src/teleop_twist_joy -DCMAKE_INSTALL_PREFIX=/home/steam/steamdeck_rover_ws/install/teleop_twist_joy
+[0.414s] -- The C compiler identification is GNU 11.4.0
+[0.527s] -- The CXX compiler identification is GNU 11.4.0
+[0.539s] -- Detecting C compiler ABI info
+[0.636s] -- Detecting C compiler ABI info - done
+[0.645s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.646s] -- Detecting C compile features
+[0.647s] -- Detecting C compile features - done
+[0.651s] -- Detecting CXX compiler ABI info
+[0.757s] -- Detecting CXX compiler ABI info - done
+[0.765s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.765s] -- Detecting CXX compile features
+[0.766s] -- Detecting CXX compile features - done
+[0.773s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.952s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.074s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.125s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.132s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.144s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.163s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.185s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.241s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[1.299s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.303s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.436s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.469s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.518s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.529s] -- Looking for pthread.h
+[1.625s] -- Looking for pthread.h - found
+[1.625s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.715s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.717s] -- Found Threads: TRUE  
+[1.772s] -- Found rclcpp_components: 16.0.12 (/opt/ros/humble/share/rclcpp_components/cmake)
+[1.814s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.841s] -- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+[1.936s] -- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+[1.937s] -- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+[2.036s] -- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+[2.036s] -- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+[2.134s] -- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+[2.139s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.244s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[2.268s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[2.274s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[2.274s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.274s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[2.275s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[2.298s] -- Found PythonExtra: .so  
+[2.325s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.325s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/steam/steamdeck_rover_ws/src/teleop_twist_joy/include>
+[2.325s] -- Configured cppcheck exclude dirs and/or files: 
+[2.331s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.331s] -- Configured cpplint exclude dirs and/or files: 
+[2.333s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.335s] -- Added test 'lint_cmake' to check CMake code style
+[2.336s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.344s] -- Added test 'uncrustify' to check C / C++ code style
+[2.344s] -- Configured uncrustify additional arguments: 
+[2.345s] -- Added test 'xmllint' to check XML markup files
+[2.350s] -- Configuring done
+[2.368s] -- Generating done
+[2.375s] -- Build files have been written to: /home/steam/steamdeck_rover_ws/build/teleop_twist_joy
+[2.390s] Invoked command in '/home/steam/steamdeck_rover_ws/build/teleop_twist_joy' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/steam/steamdeck_rover_ws/src/teleop_twist_joy -DCMAKE_INSTALL_PREFIX=/home/steam/steamdeck_rover_ws/install/teleop_twist_joy
+[2.392s] Invoking command in '/home/steam/steamdeck_rover_ws/build/teleop_twist_joy': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/steam/steamdeck_rover_ws/build/teleop_twist_joy -- -j8 -l8
+[2.455s] [ 25%] [32mBuilding CXX object CMakeFiles/teleop_twist_joy.dir/src/teleop_twist_joy.cpp.o[0m
+[13.313s] [ 50%] [32m[1mLinking CXX shared library libteleop_twist_joy.so[0m
+[14.031s] [ 50%] Built target teleop_twist_joy
+[14.057s] [ 75%] [32mBuilding CXX object CMakeFiles/teleop_twist_joy_node.dir/src/teleop_node.cpp.o[0m
+[17.315s] [100%] [32m[1mLinking CXX executable teleop_node[0m
+[17.687s] [100%] Built target teleop_twist_joy_node
+[17.703s] Invoked command in '/home/steam/steamdeck_rover_ws/build/teleop_twist_joy' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/steam/steamdeck_rover_ws/build/teleop_twist_joy -- -j8 -l8
+[17.715s] Invoking command in '/home/steam/steamdeck_rover_ws/build/teleop_twist_joy': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/steam/steamdeck_rover_ws/build/teleop_twist_joy
+[17.724s] -- Install configuration: ""
+[17.724s] -- Installing: /home/steam/steamdeck_rover_ws/install/teleop_twist_joy/lib/libteleop_twist_joy.so
+[17.734s] -- Set runtime path of "/home/steam/steamdeck_rover_ws/install/teleop_twist_joy/lib/libteleop_twist_joy.so" to ""
+[17.734s] -- Installing: /home/steam/steamdeck_rover_ws/install/teleop_twist_joy/lib/teleop_twist_joy/teleop_node
+[17.735s] -- Set runtime path of "/home/steam/steamdeck_rover_ws/install/teleop_twist_joy/lib/teleop_twist_joy/teleop_node" to ""
+[17.735s] -- Installing: /home/steam/steamdeck_rover_ws/install/teleop_twist_joy/include/teleop_twist_joy
+[17.735s] -- Installing: /home/steam/steamdeck_rover_ws/install/teleop_twist_joy/include/teleop_twist_joy/teleop_twist_joy
+[17.735s] -- Installing: /home/steam/steamdeck_rover_ws/install/teleop_twist_joy/include/teleop_twist_joy/teleop_twist_joy/teleop_twist_joy.hpp
+[17.735s] -- Installing: /home/steam/steamdeck_rover_ws/install/teleop_twist_joy/include/teleop_twist_joy/teleop_twist_joy/teleop_twist_joy_export.h
+[17.735s] -- Installing: /home/steam/steamdeck_rover_ws/install/teleop_twist_joy/share/teleop_twist_joy/launch
+[17.735s] -- Installing: /home/steam/steamdeck_rover_ws/install/teleop_twist_joy/share/teleop_twist_joy/launch/teleop-launch.py
+[17.736s] -- Installing: /home/steam/steamdeck_rover_ws/install/teleop_twist_joy/share/teleop_twist_joy/config
+[17.736s] -- Installing: /home/steam/steamdeck_rover_ws/install/teleop_twist_joy/share/teleop_twist_joy/config/ps5.config.yaml
+[17.736s] -- Installing: /home/steam/steamdeck_rover_ws/install/teleop_twist_joy/share/teleop_twist_joy/config/xbox.config.yaml
+[17.737s] -- Installing: /home/steam/steamdeck_rover_ws/install/teleop_twist_joy/share/teleop_twist_joy/config/xd3.config.yaml
+[17.737s] -- Installing: /home/steam/steamdeck_rover_ws/install/teleop_twist_joy/share/teleop_twist_joy/config/pdp.config.yaml
+[17.737s] -- Installing: /home/steam/steamdeck_rover_ws/install/teleop_twist_joy/share/teleop_twist_joy/config/atk3.config.yaml
+[17.738s] -- Installing: /home/steam/steamdeck_rover_ws/install/teleop_twist_joy/share/teleop_twist_joy/config/ps3.config.yaml
+[17.738s] -- Installing: /home/steam/steamdeck_rover_ws/install/teleop_twist_joy/share/teleop_twist_joy/config/ps3-holonomic.config.yaml
+[17.738s] -- Installing: /home/steam/steamdeck_rover_ws/install/teleop_twist_joy/share/teleop_twist_joy/config/steamdeck_dpad.yaml
+[17.739s] -- Installing: /home/steam/steamdeck_rover_ws/install/teleop_twist_joy/share/teleop_twist_joy/environment/library_path.sh
+[17.739s] -- Installing: /home/steam/steamdeck_rover_ws/install/teleop_twist_joy/share/teleop_twist_joy/environment/library_path.dsv
+[17.739s] -- Installing: /home/steam/steamdeck_rover_ws/install/teleop_twist_joy/share/ament_index/resource_index/package_run_dependencies/teleop_twist_joy
+[17.739s] -- Installing: /home/steam/steamdeck_rover_ws/install/teleop_twist_joy/share/ament_index/resource_index/parent_prefix_path/teleop_twist_joy
+[17.739s] -- Installing: /home/steam/steamdeck_rover_ws/install/teleop_twist_joy/share/teleop_twist_joy/environment/ament_prefix_path.sh
+[17.740s] -- Installing: /home/steam/steamdeck_rover_ws/install/teleop_twist_joy/share/teleop_twist_joy/environment/ament_prefix_path.dsv
+[17.740s] -- Installing: /home/steam/steamdeck_rover_ws/install/teleop_twist_joy/share/teleop_twist_joy/environment/path.sh
+[17.740s] -- Installing: /home/steam/steamdeck_rover_ws/install/teleop_twist_joy/share/teleop_twist_joy/environment/path.dsv
+[17.740s] -- Installing: /home/steam/steamdeck_rover_ws/install/teleop_twist_joy/share/teleop_twist_joy/local_setup.bash
+[17.740s] -- Installing: /home/steam/steamdeck_rover_ws/install/teleop_twist_joy/share/teleop_twist_joy/local_setup.sh
+[17.740s] -- Installing: /home/steam/steamdeck_rover_ws/install/teleop_twist_joy/share/teleop_twist_joy/local_setup.zsh
+[17.741s] -- Installing: /home/steam/steamdeck_rover_ws/install/teleop_twist_joy/share/teleop_twist_joy/local_setup.dsv
+[17.741s] -- Installing: /home/steam/steamdeck_rover_ws/install/teleop_twist_joy/share/teleop_twist_joy/package.dsv
+[17.741s] -- Installing: /home/steam/steamdeck_rover_ws/install/teleop_twist_joy/share/ament_index/resource_index/packages/teleop_twist_joy
+[17.741s] -- Installing: /home/steam/steamdeck_rover_ws/install/teleop_twist_joy/share/ament_index/resource_index/rclcpp_components/teleop_twist_joy
+[17.742s] -- Installing: /home/steam/steamdeck_rover_ws/install/teleop_twist_joy/share/teleop_twist_joy/cmake/export_teleop_twist_joyExport.cmake
+[17.742s] -- Installing: /home/steam/steamdeck_rover_ws/install/teleop_twist_joy/share/teleop_twist_joy/cmake/export_teleop_twist_joyExport-noconfig.cmake
+[17.742s] -- Installing: /home/steam/steamdeck_rover_ws/install/teleop_twist_joy/share/teleop_twist_joy/cmake/ament_cmake_export_include_directories-extras.cmake
+[17.742s] -- Installing: /home/steam/steamdeck_rover_ws/install/teleop_twist_joy/share/teleop_twist_joy/cmake/ament_cmake_export_libraries-extras.cmake
+[17.743s] -- Installing: /home/steam/steamdeck_rover_ws/install/teleop_twist_joy/share/teleop_twist_joy/cmake/ament_cmake_export_targets-extras.cmake
+[17.743s] -- Installing: /home/steam/steamdeck_rover_ws/install/teleop_twist_joy/share/teleop_twist_joy/cmake/teleop_twist_joyConfig.cmake
+[17.743s] -- Installing: /home/steam/steamdeck_rover_ws/install/teleop_twist_joy/share/teleop_twist_joy/cmake/teleop_twist_joyConfig-version.cmake
+[17.743s] -- Installing: /home/steam/steamdeck_rover_ws/install/teleop_twist_joy/share/teleop_twist_joy/package.xml
+[17.746s] Invoked command in '/home/steam/steamdeck_rover_ws/build/teleop_twist_joy' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/steam/steamdeck_rover_ws/build/teleop_twist_joy
