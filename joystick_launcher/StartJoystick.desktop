@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Start Joystick
+Exec=sh -c "nohup /home/steam/start_joystick.sh >/dev/null 2>&1 &"
+Icon=input-gaming
+Terminal=false
+Categories=Utility;

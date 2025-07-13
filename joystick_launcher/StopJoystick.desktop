@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Stop Joystick
+Exec=sh -c "nohup /home/steam/stop_joystick.sh >/dev/null 2>&1 &"
+Icon=application-exit
+Terminal=false
+Categories=Utility;
