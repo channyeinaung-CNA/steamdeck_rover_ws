@@ -108,3 +108,31 @@ ros2 run tf2_ros tf2_echo map base_link
 
 ros2 launch -- ./scripts/slam_with_delay.launch.py
 
+
+cat /etc/resolv.conf | grep nameserver
+
+docker run -it --rm \
+  --name ros2_dev \
+  -v ~/steamdeck_rover_ws:/ros2_ws \
+  --network=host \
+  -e DISPLAY=172.28.112.1:0 \
+  ros2_rviz_only
+
+source /opt/ros/humble/setup.bash
+rviz2
+
+nano ~/run_ros2_rviz.sh
+
+#!/bin/bash
+export DISPLAY=172.28.112.1:0
+docker run -it --rm \
+  --name ros2_dev \
+  -v ~/steamdeck_rover_ws:/ros2_ws \
+  --network=host \
+  -e DISPLAY=$DISPLAY \
+  ros2_rviz_only
+
+chmod +x ~/run_ros2_rviz.sh
+./run_ros2_rviz.sh
+
+
